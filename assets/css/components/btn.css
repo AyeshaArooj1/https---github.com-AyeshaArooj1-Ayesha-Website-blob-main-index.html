@@ -1,0 +1,49 @@
+/*-----------------------------------*\
+  #btn.css
+\*-----------------------------------*/
+
+
+/**
+* copyright 2023 codewithayesha
+*/
+
+
+
+
+
+.btn {
+  background-color:  #A76F6F;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  max-width: max-content;
+  letter-spacing: 2px;
+  padding: 10px 22px;
+  box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--jet));
+}
+
+.btn:is(:hover, :focus-visible) {
+  background-color: var(--hover-bg, var(--jet));
+  box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, var(#A76F6F));
+}
+
+.btn-primary,
+.btn-secondary { color: var(--white);}
+
+.btn-secondary {
+  background-color: var(--jet);
+  --shadow-color: #A76F6F;
+  --hover-bg: #A76F6F;
+  --hover-shadow-color: var(--jet);
+}
+
+.btn-tertiary {
+  color: var(--jet);
+  background-color: #A76F6F;
+  --shadow-color: #F8E8EE;
+  --hover-bg: var(#F8E8EE);
+  --hover-shadow-color: #A76F6F;
+}
+
+.btn-tertiary:is(:hover, :focus-visible) { color: var(--white);}
+
